@@ -8,12 +8,14 @@ import { MenuButtonComponent } from './menu/menu-button/menu-button.component';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import {MatIconModule} from '@angular/material/icon';
 import {MatButtonModule} from '@angular/material/button';
+import { NavbarComponent } from './navbar/navbar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MenuComponent,
     MenuButtonComponent,
+    NavbarComponent,
   ],
   imports: [
     BrowserModule,
