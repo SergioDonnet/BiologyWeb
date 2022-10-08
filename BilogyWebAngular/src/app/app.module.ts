@@ -11,6 +11,8 @@ import {MatButtonModule} from '@angular/material/button';
 import { LoginComponent } from './login/login.component';
 import { CardsComponent } from './cards/cards.component';
 import { FooterComponent } from './footer/footer.component';
+import { NavbarComponent } from './navbar/navbar.component';
+
 
 @NgModule({
   declarations: [
@@ -20,6 +22,8 @@ import { FooterComponent } from './footer/footer.component';
     LoginComponent,
     CardsComponent,
     FooterComponent,
+    NavbarComponent,
+
   ],
   imports: [
     BrowserModule,
