@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "biologyweb-e247e": {
+      "hosting": {
+        "BilogyWebAngular": [
+          "biologyweb-e247e"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "biologyweb-e247e"
+  }
+}

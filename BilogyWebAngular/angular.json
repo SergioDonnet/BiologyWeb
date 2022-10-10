@@ -102,6 +102,16 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "prerender": false,
+            "ssr": false,
+            "browserTarget": "BilogyWebAngular:build:production",
+            "firebaseProject": "biologyweb-e247e",
+            "firebaseHostingSite": "biologyweb-e247e"
+          }
         }
       }
     }
