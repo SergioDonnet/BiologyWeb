@@ -1,3 +1,20 @@
 .example-spacer {
     flex: 1 1 auto;
   }
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  border-radius: 10px;
+  margin-top: 20px;
+  margin-left: 87px;
+  margin-right: 87px;
+  width: auto;
+  height: 60px;
+  margin-bottom: 20px;
+}
+
+.mat-button-home {
+  display: flex;
+  flex-direction: column;
+}
