@@ -1,11 +1,10 @@
 .example-card {
   width: 299px;
   height: 320px;
-    border-radius: 15px;
-    margin-top: 1022px;
-  }
-  
-div{
+  border-radius: 15px;
+}
+
+div {
   display: flex;
   justify-content: space-evenly;
   margin-left: 87px;
@@ -13,16 +12,16 @@ div{
 }
 
 p {
-text-align: center;
-line-height: 1.5;
-color: #6a6a6a;
+  text-align: center;
+  line-height: 1.5;
+  color: #6a6a6a;
 }
 
-.mat-card-title{
-font-weight: 400;
+.mat-card-title {
+  font-weight: 400;
 }
 
-.mat-card-image{
-width: 332px;
-height: 194px;
+.mat-card-image {
+  width: 332px;
+  height: 194px;
 }
