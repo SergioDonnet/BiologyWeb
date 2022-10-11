@@ -2,7 +2,10 @@
   <div>
     <!--<app-menu></app-menu>-->
     <app-navbar></app-navbar>
-    <app-cards></app-cards>
+    <div>
+      <app-cards style="display: inline-block;" *ngFor="let course of this.courses" title={{course.title}}
+        subtitle={{course.subtitle}} imageUrl={{course.imageUrl}} description={{course.description}}></app-cards>
+    </div>
   </div>
   <div>Content</div>
   <div>Footer</div>

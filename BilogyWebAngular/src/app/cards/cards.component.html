@@ -1,47 +1,12 @@
-<div>
 <mat-card class="example-card">
-    <mat-card-header>
-      <mat-card-title>EL ARTE DE </mat-card-title>
-      <mat-card-subtitle>planear que comer</mat-card-subtitle>
-    </mat-card-header>
-    <img mat-card-image src="https://images.squarespace-cdn.com/content/v1/561718ebe4b062a227c4fcf2/1538418129900-HC4T3SOGHAL4AJ8K6TV5/image-asset.jpeg?format=1000w">
-    <mat-card-content>
-      <p>
-        Aqui conoceras la importancia de una alimentacion saludable.
-      </p>
-    </mat-card-content>
-    <mat-card-actions>
-    </mat-card-actions>
-  </mat-card>
-
-  <mat-card class="example-card">
-    <mat-card-header>
-      <mat-card-title>¿QUE TIENEN EN</mat-card-title>
-      <mat-card-subtitle>común los seres vivos?</mat-card-subtitle>
-    </mat-card-header>
-    <img mat-card-image src="https://www.lifeder.com/wp-content/uploads/2021/07/biodiversidad-animales-seres-vivos.jpg">
-    <mat-card-content>
-      <p>
-        Podras reconocer a la celula como unidad de los seres vivos.
-      </p>
-    </mat-card-content>
-    <mat-card-actions>
-    </mat-card-actions>
-  </mat-card>
-
-
-  <mat-card class="example-card">
-    <mat-card-header>
-      <mat-card-title>BIODIVERSIDAD</mat-card-title>
-      <mat-card-subtitle>en México</mat-card-subtitle>
-    </mat-card-header>
-    <img mat-card-image src="https://www.elagoradiario.com/wp-content/uploads/2020/04/juego-sobre-biodiversidad.jpg">
-    <mat-card-content>
-      <p>
-        Aqui aprenderas sobre la biodiversidad en méxico.
-      </p>
-    </mat-card-content>
-    <mat-card-actions>
-    </mat-card-actions>
-  </mat-card>
-</div>
+  <mat-card-header>
+    <mat-card-title>{{title}}</mat-card-title>
+    <mat-card-subtitle>{{subtitle}}</mat-card-subtitle>
+  </mat-card-header>
+  <img mat-card-image src={{imageUrl}}>
+  <mat-card-content>
+    <p>{{description}}</p>
+  </mat-card-content>
+  <mat-card-actions>
+  </mat-card-actions>
+</mat-card>
