@@ -15,3 +15,4 @@ jobs:
           repoToken: '${{ secrets.GITHUB_TOKEN }}'
           firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_BIOLOGYWEB_E247E }}'
           projectId: biologyweb-e247e
+          entryPoint: BilogyWebAngular
