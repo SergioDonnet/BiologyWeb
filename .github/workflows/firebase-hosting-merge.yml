@@ -18,3 +18,4 @@ jobs:
           firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_BIOLOGYWEB_E247E }}'
           channelId: live
           projectId: biologyweb-e247e
+          entryPoint: BilogyWebAngular
