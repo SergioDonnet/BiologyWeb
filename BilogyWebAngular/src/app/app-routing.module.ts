@@ -1,7 +1,14 @@
-import { NgModule } from '@angular/core';
+import { Component, NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { AboutUsButtonComponent } from './navbar/about-us-button/about-us-button.component';
+import { CoursesButtonComponent } from './navbar/courses-button/courses-button.component';
+import { HomeButtonComponent } from './navbar/home-button/home-button.component';
 
-const routes: Routes = [];
+const routes: Routes = [
+  {path:'home-button', component:HomeButtonComponent},
+  {path:'courses-button', component:CoursesButtonComponent},
+  {path:'about-us-button', component:AboutUsButtonComponent},
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
