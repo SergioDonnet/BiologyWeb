@@ -8,6 +8,8 @@ const routes: Routes = [
   {path:'home-button', component:HomeButtonComponent},
   {path:'courses-button', component:CoursesButtonComponent},
   {path:'about-us-button', component:AboutUsButtonComponent},
+  {path:'**', redirectTo: 'home-button', pathMatch: 'full'},
+  {path:'', component:HomeButtonComponent}
 ];
 
 @NgModule({
