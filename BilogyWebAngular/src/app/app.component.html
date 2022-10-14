@@ -2,10 +2,10 @@
   <div>
     <!--<app-menu></app-menu>-->
     <app-navbar></app-navbar>
+    <router-outlet></router-outlet>
     <div>
       <app-cards style="display: inline-block;" *ngFor="let course of this.courses" title={{course.title}}
         subtitle={{course.subtitle}} imageUrl={{course.imageUrl}} description={{course.description}}></app-cards>
   </div>
 </div>
-<router-outlet></router-outlet>
 <app-footer></app-footer>
