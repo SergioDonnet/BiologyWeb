@@ -1,13 +1,14 @@
 .example-spacer {
   display: flex;
   flex: 1 1 auto;
-  margin-left: 97px;
+  margin-left: 115px;
   justify-content: space-between;
+  align-content: center;
 }
 
 .example-card {
-  width: 265px;
-  height: 350px;
+  width: 240px;
+  height: 275px;
   border-radius: 15px;
 }
 
@@ -23,12 +24,18 @@ p {
   color: #6a6a6a;
 }
 
+.mat-card-header {
+  height: 55px;
+  padding-left: 0%;
+  margin-inline-start: -15px;
+}
 .mat-card-title {
-  font-weight: 400;
+  font-size:18px ;
+  font-weight: 500;
 }
 
 .mat-card-image {
-  width: 297px;
-  height: 194px;
+  width: 272px;
+  height: 175px;
   border-radius:10px;
 }
