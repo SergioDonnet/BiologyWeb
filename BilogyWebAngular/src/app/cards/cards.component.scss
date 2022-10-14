@@ -1,18 +1,24 @@
+.example-spacer {
+  display: flex;
+  flex: 1 1 auto;
+  margin-left: 97px;
+  justify-content: space-between;
+}
+
 .example-card {
-  width: 299px;
-  height: 320px;
+  width: 265px;
+  height: 350px;
   border-radius: 15px;
 }
 
 div {
   display: flex;
-  justify-content: space-evenly;
-  margin-left: 87px;
-  margin-right: 87px;
+  justify-content: center;
+  //gap: 25px;
 }
 
 p {
-  text-align: center;
+  text-align: justify;
   line-height: 1.5;
   color: #6a6a6a;
 }
@@ -22,6 +28,7 @@ p {
 }
 
 .mat-card-image {
-  width: 332px;
+  width: 297px;
   height: 194px;
+  border-radius:10px;
 }
