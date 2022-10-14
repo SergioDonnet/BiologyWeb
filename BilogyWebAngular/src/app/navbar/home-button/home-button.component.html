@@ -1,1 +1,5 @@
 <p>home-button works!</p>
+<div>
+      <app-cards style="display: inline-block;" *ngFor="let course of this.courses" title={{course.title}}
+        subtitle={{course.subtitle}} imageUrl={{course.imageUrl}} description={{course.description}}></app-cards>
+  </div>
