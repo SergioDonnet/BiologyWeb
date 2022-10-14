@@ -17,6 +17,7 @@ import { environment } from '../environments/environment';
 import { provideAuth, getAuth } from '@angular/fire/auth';
 import { provideFirestore, getFirestore } from '@angular/fire/firestore';
 import { provideFunctions, getFunctions } from '@angular/fire/functions';
+import { HomeButtonComponent } from './navbar/home-button/home-button.component';
 
 
 @NgModule({
@@ -28,7 +29,7 @@ import { provideFunctions, getFunctions } from '@angular/fire/functions';
     CardsComponent,
     FooterComponent,
     NavbarComponent,
-
+    HomeButtonComponent,
   ],
   imports: [
     BrowserModule,

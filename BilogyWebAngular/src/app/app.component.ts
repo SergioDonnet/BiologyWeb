@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { Course, CoursesService } from './services/courses.service';
 
 @Component({
   selector: 'app-root',
@@ -8,11 +7,8 @@ import { Course, CoursesService } from './services/courses.service';
 })
 export class AppComponent implements OnInit {
   title = 'BilogyWebAngular';
-  courses: Course[] = [];
-
-  constructor(public coursesService: CoursesService) {}
-
+  
+  constructor() {}
   ngOnInit(): void {
-    this.coursesService.loadCourses().then(courses => this.courses = courses);
   }
 }
