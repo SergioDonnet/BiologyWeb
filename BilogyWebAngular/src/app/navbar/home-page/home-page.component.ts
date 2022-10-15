@@ -2,11 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import { Course, CoursesService } from 'src/app/services/courses.service';
 
 @Component({
-  selector: 'app-home-button',
-  templateUrl: './home-button.component.html',
-  styleUrls: ['./home-button.component.scss'],
+  selector: 'app-home-page',
+  templateUrl: './home-page.component.html',
+  styleUrls: ['./home-page.component.scss'],
 })
-export class HomeButtonComponent implements OnInit {
+export class HomePageComponent implements OnInit {
   courses: Course[] = [];
 
   constructor(public coursesService: CoursesService) {}
