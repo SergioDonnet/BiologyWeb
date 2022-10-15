@@ -8,7 +8,7 @@ import { MenuButtonComponent } from './menu/menu-button/menu-button.component';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
-import { LoginComponent } from './login/login.component';
+import { LoginComponent } from './components/login/login.component';
 import { CardsComponent } from './cards/cards.component';
 import { FooterComponent } from './footer/footer.component';
 import { NavbarComponent } from './navbar/navbar.component';
@@ -18,6 +18,8 @@ import { provideAuth, getAuth } from '@angular/fire/auth';
 import { provideFirestore, getFirestore } from '@angular/fire/firestore';
 import { provideFunctions, getFunctions } from '@angular/fire/functions';
 import { HomeButtonComponent } from './navbar/home-button/home-button.component';
+import { PruebaUnoComponent } from './components/prueba-uno/prueba-uno.component';
+import { PruebaDosComponent } from './components/prueba-dos/prueba-dos.component';
 
 
 @NgModule({
@@ -30,6 +32,8 @@ import { HomeButtonComponent } from './navbar/home-button/home-button.component'
     FooterComponent,
     NavbarComponent,
     HomeButtonComponent,
+    PruebaUnoComponent,
+    PruebaDosComponent,
   ],
   imports: [
     BrowserModule,
