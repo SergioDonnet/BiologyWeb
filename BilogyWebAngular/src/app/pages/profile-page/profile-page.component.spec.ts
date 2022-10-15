@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { PruebaDosComponent } from './prueba-dos.component';
+import { ProfilePageComponent } from './profile-page.component';
 
-describe('PruebaDosComponent', () => {
-  let component: PruebaDosComponent;
-  let fixture: ComponentFixture<PruebaDosComponent>;
+describe('ProfilePageComponent', () => {
+  let component: ProfilePageComponent;
+  let fixture: ComponentFixture<ProfilePageComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ PruebaDosComponent ]
+      declarations: [ ProfilePageComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(PruebaDosComponent);
+    fixture = TestBed.createComponent(ProfilePageComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
