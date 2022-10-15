@@ -20,6 +20,8 @@ import { provideFunctions, getFunctions } from '@angular/fire/functions';
 import { HomePageComponent } from './pages/home-page/home-page.component';
 import { ProfileComponent } from './components/profile/profile.component';
 import { ProfilePageComponent } from './pages/profile-page/profile-page.component';
+import { BooksComponent } from './components/books/books.component';
+import { CoursesPageComponent } from './pages/courses-page/courses-page.component';
 
 
 @NgModule({
@@ -32,8 +34,10 @@ import { ProfilePageComponent } from './pages/profile-page/profile-page.componen
     FooterComponent,
     NavbarComponent,
     HomePageComponent,
+    CoursesPageComponent,
     ProfileComponent,
     ProfilePageComponent,
+    BooksComponent,
   ],
   imports: [
     BrowserModule,
