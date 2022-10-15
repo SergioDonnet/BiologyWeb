@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Course, CoursesService } from 'src/app/services/courses.service';
+import { Course, CoursesService } from 'src/app/services/courses/courses.service';
 
 @Component({
   selector: 'app-home-page',
