@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { LoginSergio, LoginSergioService } from 'src/app/services/loginsergio.service';
 
 @Component({
   selector: 'app-about-us-button',
@@ -6,10 +7,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./about-us-button.component.scss']
 })
 export class AboutUsButtonComponent implements OnInit {
-
-  constructor() { }
+  loginsergio: LoginSergio []=[];
+  constructor(public loginsergioService: LoginSergioService) { }
 
   ngOnInit(): void {
+    this.loginsergioService.loadLoginSergio().then(fbLoginSergio => this.loginsergioService =fbLoginSergio);
+
   }
 
 }
