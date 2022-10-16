@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { LoginSergio, LoginSergioService } from 'src/app/services/loginsergio.service';
+import { LoginSergio, LoginSergioService } from 'src/app/services/loginsergio/loginsergio.service';
 
 @Component({
   selector: 'app-about-us-button',
@@ -11,7 +11,7 @@ export class AboutUsButtonComponent implements OnInit {
   constructor(public loginsergioService: LoginSergioService) { }
 
   ngOnInit(): void {
-    this.loginsergioService.loadLoginSergio().then(fbLoginSergio => this.loginsergioService =fbLoginSergio);
+    this.loginsergioService.loadLoginSergio().then(fbLoginSergio => this.loginsergio =fbLoginSergio);
 
   }
 

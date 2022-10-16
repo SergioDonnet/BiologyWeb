@@ -22,6 +22,7 @@ import { ProfileComponent } from './components/profile/profile.component';
 import { ProfilePageComponent } from './pages/profile-page/profile-page.component';
 import { BooksComponent } from './components/books/books.component';
 import { CoursesPageComponent } from './pages/courses-page/courses-page.component';
+import { AboutUsButtonComponent } from './pages/about-us-button/about-us-button.component';
 
 
 @NgModule({
@@ -38,6 +39,7 @@ import { CoursesPageComponent } from './pages/courses-page/courses-page.componen
     ProfileComponent,
     ProfilePageComponent,
     BooksComponent,
+    AboutUsButtonComponent,
   ],
   imports: [
     BrowserModule,
