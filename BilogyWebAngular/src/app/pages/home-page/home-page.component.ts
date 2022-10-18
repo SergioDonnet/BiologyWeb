@@ -9,7 +9,7 @@ import { Course, CoursesService } from 'src/app/services/courses/courses.service
 export class HomePageComponent implements OnInit {
   courses: Course[] = [];
 
-  constructor(public coursesService: CoursesService) {}
+  constructor(public coursesService: CoursesService) { }
 
   ngOnInit(): void {
     this.coursesService.loadCourses().then(fbCourses => this.courses = fbCourses);

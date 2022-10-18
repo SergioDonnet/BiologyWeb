@@ -8,7 +8,7 @@
 
 .example-card {
   width: 240px;
-  height: 275px;
+  height: auto;
   border-radius: 15px;
 }
 
@@ -29,13 +29,22 @@ p {
   padding-left: 0%;
   margin-inline-start: -15px;
 }
+
 .mat-card-title {
-  font-size:18px ;
+  font-size: 18px;
   font-weight: 500;
 }
 
 .mat-card-image {
   width: 272px;
   height: 175px;
-  border-radius:10px;
+  border-radius: 10px;
+}
+
+.mat-card-button {
+  background-color: #34A853;
+  color: white;
+  width: 255px;
+  align-content: center;
+  border-radius: 10px;
 }

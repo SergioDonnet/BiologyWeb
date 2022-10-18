@@ -9,7 +9,7 @@ import { Book, BooksService } from 'src/app/services/books/books.service';
 export class CoursesPageComponent implements OnInit {
   books: Book[] = [];
 
-  constructor(public booksService: BooksService) {}
+  constructor(public booksService: BooksService) { }
 
   ngOnInit(): void {
     this.booksService.loadBooks().then(fbBooks => this.books = fbBooks);
