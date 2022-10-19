@@ -23,7 +23,7 @@ import { ProfilePageComponent } from './pages/profile-page/profile-page.componen
 import { BooksComponent } from './components/books/books.component';
 import { CoursesPageComponent } from './pages/courses-page/courses-page.component';
 import { AboutUsButtonComponent } from './pages/about-us-button/about-us-button.component';
-
+import { MatProgressBarModule } from '@angular/material/progress-bar';
 
 @NgModule({
   declarations: [
@@ -48,6 +48,7 @@ import { AboutUsButtonComponent } from './pages/about-us-button/about-us-button.
     MatIconModule,
     MatButtonModule,
     MatCardModule,
+    MatProgressBarModule,
     provideFirebaseApp(() => initializeApp(environment.firebase)),
     provideAuth(() => getAuth()),
     provideFirestore(() => getFirestore()),

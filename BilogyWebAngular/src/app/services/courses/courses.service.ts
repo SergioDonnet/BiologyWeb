@@ -32,12 +32,13 @@ export class CoursesService {
     return deleteDoc(doc(this.db, `courses/${course.id}`));
   }
 
-  async loadCourses() {
+  async listCourses() {
     const querySnapshot = await getDocs(collection(this.db, "courses"));
     const courses: Course[] = [];
     querySnapshot.forEach((doc) => {
       const data = doc.data();
       courses.push({
+        id: doc.id,
         title: data['title'],
         subtitle: data['subtitle'],
         imageUrl: data['imageUrl'],
@@ -55,7 +56,7 @@ export class CoursesService {
 }
 
 export interface Course {
-  id?: string,
+  id: string,
   title: string,
   subtitle: string,
   imageUrl: string,

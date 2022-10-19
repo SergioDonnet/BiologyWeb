@@ -14,12 +14,20 @@ export class HomePageComponent implements OnInit {
   constructor(public coursesService: CoursesService) { }
 
   ngOnInit(): void {
-    this.coursesService.loadCourses().then(fbCourses => this.courses = fbCourses);
     this.currentUser = {
       email: 'kyoo@google.com',
       password: '123',
-      user: 'Rodrigo'
+      user: 'Rodrigo',
+      progress: new Map<string, number>([
+        ["RtTUFKfAJb75cC5LpotL", 10],
+        ["gqLv2rFoy6UYicEIOBMc", 80]
+      ])
     };
+
+    this.coursesService.listCourses().then(fbCourses => {
+      // console.log('prueba: ' + JSON.stringify(fbCourses));
+      this.courses = fbCourses;
+    });
   }
 
 }
