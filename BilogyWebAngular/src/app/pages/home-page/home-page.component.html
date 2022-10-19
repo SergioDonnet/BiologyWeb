@@ -1,5 +1,22 @@
 <p>home-button works!</p>
 <div>
-      <app-cards style="display: inline-block;" *ngFor="let course of this.courses" title={{course.title}}
-        subtitle={{course.subtitle}} imageUrl={{course.imageUrl}} description={{course.description}}></app-cards>
-  </div>
+  <app-cards
+    style="display: inline-block"
+    *ngFor="let course of this.courses"
+    title="{{ course.title }}"
+    subtitle="{{ course.subtitle }}"
+    imageUrl="{{ course.imageUrl }}"
+    description="{{ course.description }}"
+  ></app-cards>
+</div>
+
+<div class="padre" [ngSwitch]="case">
+  <div *ngSwitchCase="1">Hola soy Sergio</div>
+  <div *ngSwitchCase="2">Hola soy Gaby</div>
+  <div *ngSwitchCase="3">Hola a todos</div>
+</div>
+
+<button (click)="changeText()">Cambiar</button>
+<div *ngIf="showText">
+  <div>preba de ng if</div>
+</div>
