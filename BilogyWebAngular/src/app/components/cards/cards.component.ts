@@ -10,6 +10,8 @@ export class CardsComponent implements OnInit {
   @Input() subtitle?: string;
   @Input() imageUrl?: string;
   @Input() description?: string;
+  @Input() showButton: boolean = false;
+  @Input() progress: number = 0;
 
   constructor() { }
 

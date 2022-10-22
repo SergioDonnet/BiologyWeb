@@ -21,8 +21,43 @@ section {
   border-radius: 10px;
 }
 
-button:not(.mat-icon-button) {
-  display: flex;
-  flex-direction: column;
-  background-color: #137f30;
+.text-titles {
+  width: 1021px;
+  height: 108px;
+  margin-left: 87px;
+  margin-right: 87px;
+  top: 838px;
+
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 54px;
+
+  text-align: center;
+  letter-spacing: 1.25px;
+
+  color: #34a853;
+}
+
+.text-content {
+  width: 981px;
+  height: 90px;
+  margin-left: 87px;
+  margin-right: 87px;
+  left: 256px;
+  //top: 981px;
+
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 30px;
+  /* or 120% */
+
+  text-align: center;
+  letter-spacing: 1.25px;
+  text-indent: 1px;
+
+  color: #000000;
 }

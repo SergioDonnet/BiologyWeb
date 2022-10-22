@@ -7,11 +7,11 @@ import { LoginSergio, LoginSergioService } from 'src/app/services/loginsergio/lo
   styleUrls: ['./about-us-button.component.scss']
 })
 export class AboutUsButtonComponent implements OnInit {
-  loginsergio: LoginSergio []=[];
+  loginsergio: LoginSergio[] = [];
   constructor(public loginsergioService: LoginSergioService) { }
 
   ngOnInit(): void {
-    this.loginsergioService.loadLoginSergio().then(fbLoginSergio => this.loginsergio =fbLoginSergio);
+    this.loginsergioService.loadLoginSergio().then(fbLoginSergio => this.loginsergio = fbLoginSergio);
 
   }
 
