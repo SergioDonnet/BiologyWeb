@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { Course, CoursesService } from 'src/app/services/courses/courses.service';
+import {
+  Course,
+  CoursesService,
+} from 'src/app/services/courses/courses.service';
 import { LoginSergio } from 'src/app/services/loginsergio/loginsergio.service';
 
 @Component({
@@ -11,7 +14,7 @@ export class HomePageComponent implements OnInit {
   courses: Course[] = [];
   currentUser?: LoginSergio;
 
-  constructor(public coursesService: CoursesService) { }
+  constructor(public coursesService: CoursesService) {}
 
   ngOnInit(): void {
     this.currentUser = {
@@ -19,15 +22,14 @@ export class HomePageComponent implements OnInit {
       password: '123',
       user: 'Rodrigo',
       progress: new Map<string, number>([
-        ["RtTUFKfAJb75cC5LpotL", 10],
-        ["gqLv2rFoy6UYicEIOBMc", 80]
-      ])
+        ['RtTUFKfAJb75cC5LpotL', 10],
+        ['gqLv2rFoy6UYicEIOBMc', 80],
+      ]),
     };
 
-    this.coursesService.listCourses().then(fbCourses => {
+    this.coursesService.listCourses().then((fbCourses) => {
       // console.log('prueba: ' + JSON.stringify(fbCourses));
       this.courses = fbCourses;
     });
   }
-
 }

@@ -12,11 +12,11 @@
   width: auto;
   height: 60px;
   margin-bottom: 20px;
-  background-color: #34A853;
+  background-color: #34a853;
   box-shadow: 1px 8px 22px rgb(210, 210, 210);
 }
 
-.mat-button-home {
+button:not(.mat-icon-button) {
   display: flex;
   flex-direction: column;
 }
