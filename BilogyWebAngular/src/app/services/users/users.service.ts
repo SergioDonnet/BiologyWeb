@@ -5,7 +5,7 @@ import { Observable } from 'rxjs';
 @Injectable({
   providedIn: 'root'
 })
-export class UserService {
+export class UsersService {
 
   constructor(private db: Firestore) { }
 
@@ -17,7 +17,8 @@ export class UserService {
       user.push({
         email:data['email'],
         password:data['password'],
-        user:data['user']
+        userName:data['userName'],
+        imageUrl:data['imageUrl']
       });
     });
     return user;
@@ -27,5 +28,7 @@ export class UserService {
 export interface User{
 email: string,
 password: string,
-user: string,
+userName: string,
+imageUrl: string,
+progress?: Map<string, number>,
 };
