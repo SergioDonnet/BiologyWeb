@@ -5,10 +5,10 @@ import { CoursesPageComponent } from './pages/courses-page/courses-page.componen
 import { HomePageComponent } from './pages/home-page/home-page.component';
 
 const routes: Routes = [
-  {path:'home-page', component:HomePageComponent},
-  {path:'courses-page', component:CoursesPageComponent},
-  {path:'about-us-button', component:AboutUsButtonComponent},
-  {path:'**', redirectTo: 'home-page', pathMatch: 'full'},
+  {path:'home', component:HomePageComponent},
+  {path:'courses', component:CoursesPageComponent},
+  {path:'about-us', component:AboutUsButtonComponent},
+  {path:'**', redirectTo: 'home', pathMatch: 'full'},
   {path:'', component:HomePageComponent}
 ];
 
