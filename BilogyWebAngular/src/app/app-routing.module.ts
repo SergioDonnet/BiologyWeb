@@ -1,5 +1,6 @@
 import { Component, NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { CoursesComponent } from './components/courses/courses.component';
 import { AboutUsButtonComponent } from './pages/about-us-button/about-us-button.component';
 import { CoursesPageComponent } from './pages/courses-page/courses-page.component';
 import { HomePageComponent } from './pages/home-page/home-page.component';
