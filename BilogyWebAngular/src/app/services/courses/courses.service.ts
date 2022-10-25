@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { collection, Firestore, getDoc, getDocs, addDoc, deleteDoc, setDoc, doc, docData, query, where } from '@angular/fire/firestore';
+import { collection, Firestore, getDoc, getDocs, addDoc, deleteDoc, setDoc, doc, docData, query, where, DocumentData, DocumentSnapshot, QueryDocumentSnapshot } from '@angular/fire/firestore';
 import { Observable } from 'rxjs';
 
 @Injectable({
@@ -17,7 +17,9 @@ export class CoursesService {
   }
 
   async getCourse(id: string) {
-    return getDoc(doc(this.db, `courses/${id}`));
+    const fbObject = await getDoc(doc(this.db, `courses/${id}`));
+    const course: Course = this.convertCourse(fbObject)!;
+    return course;
   }
 
   getObservableCourse(id: string): Observable<Course> {
@@ -33,17 +35,11 @@ export class CoursesService {
   }
 
   async listCourses() {
-    const querySnapshot = await getDocs(collection(this.db, "courses"));
-    const courses: Course[] = [];
-    querySnapshot.forEach((doc) => {
-      const data = doc.data();
-      courses.push({
-        id: doc.id,
-        title: data['title'],
-        subtitle: data['subtitle'],
-        imageUrl: data['imageUrl'],
-        description: data['description']
-      });
+    const firebaseObjects = await getDocs(collection(this.db, "courses"));
+
+    const courses: Course[] = []; // ArrayList<Course> courses = new ArrayList<Course>;
+    firebaseObjects.forEach((fbObject) => {
+      courses.push(this.convertCourse(fbObject)!);
     });
     return courses;
   }
@@ -53,6 +49,20 @@ export class CoursesService {
     return getDocs(q);
   }
 
+  private convertCourse(doc: DocumentSnapshot<DocumentData>) {
+    const data = doc.data();
+    if (!data) {
+      return undefined;
+    }
+    return {
+      id: doc.id,
+      title: data['title'],
+      subtitle: data['subtitle'],
+      imageUrl: data['imageUrl'],
+      description: data['description'],
+      videoUrl: data['videoUrl'],
+    };
+  }
 }
 
 export interface Course {
@@ -61,4 +71,5 @@ export interface Course {
   subtitle: string,
   imageUrl: string,
   description: string,
+  videoUrl: string,
 };

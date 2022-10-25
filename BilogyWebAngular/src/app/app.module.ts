@@ -25,6 +25,7 @@ import { CoursesPageComponent } from './pages/courses-page/courses-page.componen
 import { AboutUsButtonComponent } from './pages/about-us-button/about-us-button.component';
 import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { CoursesComponent } from './components/courses/courses.component';
+import { CourseDetailsComponent } from './pages/courses-page/course-details/course-details/course-details.component';
 
 @NgModule({
   declarations: [
@@ -42,6 +43,7 @@ import { CoursesComponent } from './components/courses/courses.component';
     BooksComponent,
     AboutUsButtonComponent,
     CoursesComponent,
+    CourseDetailsComponent,
   ],
   imports: [
     BrowserModule,
