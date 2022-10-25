@@ -1,0 +1,7 @@
+<p>This is the course {{course?.title}}</p>
+<p>It is about {{course?.description}}</p>
+<p>Youtube video: {{course?.videoUrl}}</p>
+
+<ul>
+    <li *ngFor="let lesson of lessons">{{lesson.title}}</li>
+</ul>
