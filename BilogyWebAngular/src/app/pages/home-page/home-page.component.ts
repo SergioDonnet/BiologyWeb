@@ -1,8 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {
-  Course,
-  CoursesService,
-} from 'src/app/services/courses/courses.service';
+import {Course,CoursesService,} from 'src/app/services/courses/courses.service';
 import { LoginSergio } from 'src/app/services/loginsergio/loginsergio.service';
 
 @Component({
