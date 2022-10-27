@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Book, BooksService } from 'src/app/services/books/books.service';
+import {Course,CoursesService,} from 'src/app/services/courses/courses.service';
 
 @Component({
   selector: 'app-courses-page',
@@ -7,12 +7,19 @@ import { Book, BooksService } from 'src/app/services/books/books.service';
   styleUrls: ['./courses-page.component.scss'],
 })
 export class CoursesPageComponent implements OnInit {
-  books: Book[] = [];
+  
+  courses: Course[] = [];
+  currentUser?: CoursesService;
 
-  constructor(public booksService: BooksService) { }
+  constructor(public coursesService: CoursesService) { }
 
   ngOnInit(): void {
-    this.booksService.loadBooks().then(fbBooks => this.books = fbBooks);
+   
+
+    this.coursesService.listCourses().then((fbCourses) => {
+      // console.log('prueba: ' + JSON.stringify(fbCourses));
+      this.courses = fbCourses;
+    });
   }
 
 }
