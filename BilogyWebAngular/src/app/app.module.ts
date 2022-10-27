@@ -26,6 +26,7 @@ import { AboutUsButtonComponent } from './pages/about-us-button/about-us-button.
 import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { CoursesComponent } from './components/courses/courses.component';
 import { CourseDetailsComponent } from './pages/courses-page/course-details/course-details/course-details.component';
+import { CoursesPageArteComponent } from './pages/courses-page/courses-page-arte/courses-page-arte.component';
 
 @NgModule({
   declarations: [
@@ -44,6 +45,7 @@ import { CourseDetailsComponent } from './pages/courses-page/course-details/cour
     AboutUsButtonComponent,
     CoursesComponent,
     CourseDetailsComponent,
+    CoursesPageArteComponent,
   ],
   imports: [
     BrowserModule,
