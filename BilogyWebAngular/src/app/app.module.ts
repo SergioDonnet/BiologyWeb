@@ -27,6 +27,7 @@ import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { CoursesComponent } from './components/courses/courses.component';
 import { CourseDetailsComponent } from './pages/courses-page/course-details/course-details/course-details.component';
 import { CoursesPageArteComponent } from './pages/courses-page/courses-page-arte/courses-page-arte.component';
+import { CoursesPageBiodiversidadComponent } from './pages/courses-page/courses-page-biodiversidad/courses-page-biodiversidad.component';
 
 @NgModule({
   declarations: [
@@ -46,6 +47,7 @@ import { CoursesPageArteComponent } from './pages/courses-page/courses-page-arte
     CoursesComponent,
     CourseDetailsComponent,
     CoursesPageArteComponent,
+    CoursesPageBiodiversidadComponent,
   ],
   imports: [
     BrowserModule,
