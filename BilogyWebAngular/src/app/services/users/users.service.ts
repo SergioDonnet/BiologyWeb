@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { collection, DocumentData, DocumentSnapshot, Firestore, getDocs } from '@angular/fire/firestore';
-import { doc, getDoc } from 'firebase/firestore';
+import { doc, getDoc, setDoc } from 'firebase/firestore';
 import { Observable } from 'rxjs';
 
 @Injectable({
@@ -25,12 +25,17 @@ export class UsersService {
     return users;
   }
 
+  async updateUser(user: User) {
+    return setDoc(doc(this.db, `users/${user.id}`), user, {merge: true});
+  }
+
   private convertUser(doc: DocumentSnapshot<DocumentData>) {
     const data = doc.data();
     if (!data) {
       return undefined;
     }
     return {
+      id: doc.id,
       email: data['email'],
       password: data['password'],
       userName: data['userName'],
@@ -41,6 +46,7 @@ export class UsersService {
 }
 
 export interface User {
+  id: string,
   email: string,
   password: string,
   userName: string,
