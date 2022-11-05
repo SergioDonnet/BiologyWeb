@@ -8,6 +8,9 @@ import { MenuButtonComponent } from './components/menu/menu-button/menu-button.c
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
+import { MatInputModule } from '@angular/material/input';
+import { CoolSocialLoginButtonsModule } from '@angular-cool/social-login-buttons';
+import { ReactiveFormsModule } from '@angular/forms';
 import { LoginComponent } from './components/login/login.component';
 import { CardsComponent } from './components/cards/cards.component';
 import { FooterComponent } from './components/footer/footer.component';
@@ -59,6 +62,10 @@ import { CoursesPageSeresVivosComponent } from './pages/courses-page/courses-pag
     MatButtonModule,
     MatCardModule,
     MatProgressBarModule,
+    MatInputModule,
+    ReactiveFormsModule,
+    CoolSocialLoginButtonsModule,
+
     provideFirebaseApp(() => initializeApp(environment.firebase)),
     provideAuth(() => getAuth()),
     provideFirestore(() => getFirestore()),
