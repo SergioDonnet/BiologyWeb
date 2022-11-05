@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { CoursesComponent } from './components/courses/courses.component';
 import { AboutUsButtonComponent } from './pages/about-us-button/about-us-button.component';
 import { CourseDetailsComponent } from './pages/courses-page/course-details/course-details/course-details.component';
+import { CoursesPageArteComponent } from './pages/courses-page/courses-page-arte/courses-page-arte.component';
 import { CoursesPageComponent } from './pages/courses-page/courses-page.component';
 import { HomePageComponent } from './pages/home-page/home-page.component';
 
@@ -11,6 +12,7 @@ const routes: Routes = [
   {
     path: 'home', component: HomePageComponent
   },
+  {path:'course1', component: CoursesPageArteComponent },
   {
     path: 'courses', component: CoursesPageComponent,
     children: [
