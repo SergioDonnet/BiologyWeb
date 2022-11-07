@@ -32,6 +32,7 @@ import { CourseDetailsComponent } from './pages/courses-page/course-details/cour
 import { CoursesPageArteComponent } from './pages/courses-page/courses-page-arte/courses-page-arte.component';
 import { CoursesPageBiodiversidadComponent } from './pages/courses-page/courses-page-biodiversidad/courses-page-biodiversidad.component';
 import { CoursesPageSeresVivosComponent } from './pages/courses-page/courses-page-seres-vivos/courses-page-seres-vivos.component';
+import { CoursesInfoComponent } from './components/courses-info/courses-info.component';
 
 @NgModule({
   declarations: [
@@ -53,6 +54,7 @@ import { CoursesPageSeresVivosComponent } from './pages/courses-page/courses-pag
     CoursesPageArteComponent,
     CoursesPageBiodiversidadComponent,
     CoursesPageSeresVivosComponent,
+    CoursesInfoComponent,
   ],
   imports: [
     BrowserModule,
