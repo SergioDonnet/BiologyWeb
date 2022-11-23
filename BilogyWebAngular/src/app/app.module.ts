@@ -9,6 +9,7 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 import { MatInputModule } from '@angular/material/input';
+import { MatGridListModule } from '@angular/material/grid-list';
 import { CoolSocialLoginButtonsModule } from '@angular-cool/social-login-buttons';
 import { ReactiveFormsModule } from '@angular/forms';
 import { LoginComponent } from './components/login/login.component';
@@ -32,7 +33,7 @@ import { CourseDetailsComponent } from './pages/courses-page/course-details/cour
 import { CoursesPageArteComponent } from './pages/courses-page/courses-page-arte/courses-page-arte.component';
 import { CoursesPageBiodiversidadComponent } from './pages/courses-page/courses-page-biodiversidad/courses-page-biodiversidad.component';
 import { CoursesPageSeresVivosComponent } from './pages/courses-page/courses-page-seres-vivos/courses-page-seres-vivos.component';
-import { CoursesInfoComponent } from './components/courses-info/courses-info.component';
+//import { CoursesInfoComponent } from './components/courses-info/courses-info.component';
 
 @NgModule({
   declarations: [
@@ -54,7 +55,7 @@ import { CoursesInfoComponent } from './components/courses-info/courses-info.com
     CoursesPageArteComponent,
     CoursesPageBiodiversidadComponent,
     CoursesPageSeresVivosComponent,
-    CoursesInfoComponent,
+    //CoursesInfoComponent,
   ],
   imports: [
     BrowserModule,
@@ -67,6 +68,7 @@ import { CoursesInfoComponent } from './components/courses-info/courses-info.com
     MatInputModule,
     ReactiveFormsModule,
     CoolSocialLoginButtonsModule,
+    MatGridListModule,
 
     provideFirebaseApp(() => initializeApp(environment.firebase)),
     provideAuth(() => getAuth()),

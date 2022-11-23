@@ -1,7 +1,6 @@
 import { Injectable } from '@angular/core';
 import { collection, DocumentData, DocumentSnapshot, Firestore, getDocs } from '@angular/fire/firestore';
 import { doc, getDoc, setDoc } from 'firebase/firestore';
-import { Observable } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -10,10 +9,23 @@ export class UsersService {
 
   constructor(private db: Firestore) { }
 
+  //Parámetros? para usuario con email
+  async createUserWithEmail(user: User){
+    
+  }
+  //Parámetros? para usuario con Google
+  async createUserWithGoogleAccount() {
+
+  }
+  //Parámetros? para usuario con Facebook
+  async createUserWithFacebookAccount(){
+
+  }
+
   async getUser(id: string) {
     const fbObject = await getDoc(doc(this.db, `user/${id}`));
-    const course: User = this.convertUser(fbObject)!;
-    return course;
+    const user: User = this.convertUser(fbObject)!;
+    return user;
   }
 
   async loadUsers() {
@@ -29,6 +41,10 @@ export class UsersService {
     return setDoc(doc(this.db, `users/${user.id}`), user, {merge: true});
   }
 
+  async getProgressOfUser(progress: Progress) {
+    return setDoc(doc(this.db,`users/${progress.courseId}` ), progress,{merge: true});
+  }
+
   private convertUser(doc: DocumentSnapshot<DocumentData>) {
     const data = doc.data();
     if (!data) {
@@ -40,7 +56,7 @@ export class UsersService {
       password: data['password'],
       userName: data['userName'],
       imageUrl: data['imageUrl'],
-      progressList: (data['progress'] as Array<Progress>)
+      progress: (data['progress'] as Array<Progress>)
     };
   }
 }
@@ -51,7 +67,7 @@ export interface User {
   password: string,
   userName: string,
   imageUrl: string,
-  progressList?: Array<Progress>,
+  progress?: Array<Progress>,
 };
 
 export interface Progress {
