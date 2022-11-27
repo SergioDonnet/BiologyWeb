@@ -1,22 +1,7 @@
-.example-spacer {
-  display: flex;
-  flex: 1 1 auto;
-  margin-left: 115px;
-  justify-content: space-between;
-  align-content: center;
-  margin-bottom: 50px;
-}
-
-.example-card {
+.mat-card {
   width: 240px;
   height: auto;
   border-radius: 15px;
-}
-
-div {
-  display: flex;
-  justify-content: center;
-  //gap: 25px;
 }
 
 p {

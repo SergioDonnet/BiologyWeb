@@ -23,7 +23,7 @@ export class CourseDetailsComponent implements OnInit {
 
   ngOnInit(): void {
     this.userService.getUser('TNdSPjXPLQobQPPw8UjR').then(user => {
-      console.log('pooky user: ' + JSON.stringify(user.progressList));
+      console.log('pooky user: ' + JSON.stringify(user.progress));
     });
 
 
