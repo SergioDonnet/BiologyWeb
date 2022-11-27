@@ -1,16 +1,117 @@
-iframe {
-  border-radius: 15px;
-}
-
-button {
+.container {
   display: flex;
   justify-content: center;
+}
+
+.rectangle {
+  width: 86%;
+  height: 550px;
+  background-image: url(https://firebasestorage.googleapis.com/v0/b/biologyweb-e247e.appspot.com/o/resources%2Fbackground-hojas.png?alt=media&token=d676d6f8-c543-40c3-bb3c-a180d0b4e905);
+  background-size: cover;
+  border-radius: 30px;
+  margin-bottom: 30px;
+}
+
+p {
+  font-family: 'Outfit', sans-serif;
+}
+
+.courseInfo {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.signature {
+  font-weight: 500;
+  font-size: 25px;
+  letter-spacing: 1.25px;
+  color: rgba(52, 168, 83, 0.37);
+  margin: 0px;
+  padding-left: 6%;
+  padding-top: 50px;
+}
+
+.courseTitle {
+  font-weight: 600;
+  font-size: 40px;
+  letter-spacing: 1.25px;
+  color: #34A853;
+  margin: 0px;
+  padding-left: 6%;
+}
+
+.courseDescription {
+  font-weight: 200;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 1.25px;
+  color: #000000;
+  margin: 0px;
+  padding-left: 6%;
+}
+
+.videoLessons {
+  display: flex;
+  flex-direction: row;
+}
+
+.video {
+  padding-left: 6%;
+}
+
+.videoYt {
+  //display: flex;
+  margin-top: 10px;
+  border-radius: 20px;
+}
+
+.lessons {
+  display: flex;
+  flex-direction: column;
+  margin-left: 6%;
+}
+
+.lessonName {
+  padding-left: 20px;
+}
+
+.lesson {
+  display: flex;
   align-items: center;
-  position: absolute;
-  width: 80px;
+  background: rgba(172, 220, 173, 0.46);
   height: 30px;
-  left: 1000px;
-  top: 550px;
-  background-color: #34a853;
-  border-radius: 4px;
+  width: 250px;
+  border-radius: 5px;
+  margin: 6px;
+}
+
+.titleLesson {
+  font-weight: 600;
+  font-size: 18px;
+  letter-spacing: 1.25px;
+  color: #34A853;
+  margin: 0px;
+}
+
+.buttonVolver, .buttonComenzar {
+  font-family: 'Outfit', sans-serif;
+  color: white;
+  letter-spacing: 1.25px;
+  background-color: #34A853;
+}
+
+.buttons{
+  display: flex;
+  margin-top: 10px;
+  justify-content: space-around;
+  
+}
+
+.button1 {
+  margin-right: 310px;
+}
+
+.button2 {
+  margin-left: 310px;
 }
