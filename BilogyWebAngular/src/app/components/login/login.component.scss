@@ -1,43 +1,102 @@
-mat-card {
-    max-width: 600px;
-    margin: 2em auto;
-    text-align: center;
-    max-height: 600px;
-  }
-  
-  .header{
-    text-align: center;
-  
-  }
-  .full-width {
-    width: 80%;
-  }
-  
-  .button-row {
-    padding-top: 5px;
-  }
-  
-  .button-row a {
-    margin-right: 8px;
-    text-align: center;
-  }
-  
-  .forget-password{
-    padding-left: 0px;
-  }
-  
-  .emailInput{
-    padding-top: 10px;
-  }
-  
-  .contentBody {
-    padding: 60px 1rem;
-    background :#1b6ca8;
-    display: block;
-  }
-  
-  .aLink{
-    float: right;
-    padding-right: 60px;
-    text-decoration: none;
-  }
+.container {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.rectangle {
+  display: flex;
+  width: 86%;
+  height: 490px;
+  background-image: url(https://firebasestorage.googleapis.com/v0/b/biologyweb-e247e.appspot.com/o/login%20background.png?alt=media&token=357d48c0-3f62-44e7-bca0-17417fd57368);
+  background-size: cover;
+  border-radius: 30px;
+  margin-bottom: 30px;
+  flex-direction: row;
+}
+
+p {
+  font-family: 'Outfit', sans-serif;
+}
+
+.login-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  width: 60.5%;
+  margin: 0px;
+  padding: 0px;
+}
+
+.login-form {
+  display: flex;
+  //flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  //margin-left: 170px;
+}
+
+.login-title {
+  font-weight: 500;
+  font-size: 35px;
+  letter-spacing: 1.25px;
+  color: #ffffff;
+}
+
+.login-desc {
+  font-weight: 100;
+  font-size: 25px;
+  line-height: 24px;
+  letter-spacing: 1.25px;
+  color: #ffffff;
+}
+
+.mat-card {
+  display: flex;
+  justify-content: center;
+  width: 380px;
+  margin: 2em auto;
+  text-align: center;
+  border-radius: 15px;
+  background-color: rgba(117, 224, 156, 0.79);
+  height: 420px;
+}
+
+.header {
+  text-align: center;
+
+}
+
+.full-width {
+  width: 80%;
+}
+
+.button-row {
+  padding-top: 5px;
+}
+
+.button-row a {
+  margin-right: 8px;
+  text-align: center;
+}
+
+.forget-password {
+  padding-left: 0px;
+}
+
+.emailInput {
+  padding-top: 10px;
+}
+
+.contentBody {
+  padding: 60px 1rem;
+  background: #1b6ca8;
+  display: block;
+}
+
+.aLink {
+  float: right;
+  padding-right: 60px;
+  text-decoration: none;
+}
