@@ -2,6 +2,8 @@
   @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
 </style>
 
+<app-login></app-login>
+
 <div class="text-header">
   <p class="title-min">Descubre los cursos que <span class="title-mayus">BIOLOGISC</span> tiene para ti</p>
 </div>
@@ -14,7 +16,12 @@
 </div>
 
 
-
+<div class="container-cards">
+  <app-cards style="display: inline-block" *ngFor="let course of this.courses" title="{{ course.title }}"
+    subtitle="{{ course.subtitle }}" imageUrl="{{ course.imageUrl }}" description="{{ course.description }}"
+    [showButton]="!!this.currentUser" [progress]="this.currentUser?.progress?.get(course.id) || 0">
+  </app-cards>
+</div>
 
 <div class="linea">
   <img
