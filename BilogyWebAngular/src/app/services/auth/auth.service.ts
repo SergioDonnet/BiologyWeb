@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Auth,createUserWithEmailAndPassword,signInWithEmailAndPassword,signInWithPopup,GoogleAuthProvider } from '@angular/fire/auth';
+import { FacebookAuthProvider } from '@firebase/auth';
 @Injectable({
   providedIn: 'root',
 })
@@ -22,6 +23,10 @@ export class AuthService {
 
 loginWithGoogle(){
   return signInWithPopup(this.auth,new GoogleAuthProvider());
+}
+
+loginWithFacebook(){
+  return signInWithPopup(this.auth,new FacebookAuthProvider());
 }
 
 }
