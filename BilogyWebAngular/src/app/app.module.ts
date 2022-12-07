@@ -34,6 +34,27 @@ import { CoursesPageArteComponent } from './pages/courses-page/courses-page-arte
 import { CoursesPageBiodiversidadComponent } from './pages/courses-page/courses-page-biodiversidad/courses-page-biodiversidad.component';
 import { CoursesPageSeresVivosComponent } from './pages/courses-page/courses-page-seres-vivos/courses-page-seres-vivos.component';
 import { Course1lesson1page1Component } from './coursesgo/course1/lesson1/page1/course1lesson1page1/course1lesson1page1.component';
+import { Course1lesson1page2Component } from './coursesgo/course1/lesson1/page2/course1lesson1page2/course1lesson1page2.component';
+import { Course1lesson1page3Component } from './coursesgo/course1/lesson1/page3/course1lesson1page3/course1lesson1page3.component';
+import { Course1lesson1page4Component } from './coursesgo/course1/lesson1/page4/course1lesson1page4/course1lesson1page4.component';
+import { Course1lesson1page5Component } from './coursesgo/course1/lesson1/page5/course1lesson1page5/course1lesson1page5.component';
+import { Course1lesson1page6Component } from './coursesgo/course1/lesson1/page6/course1lesson1page6/course1lesson1page6.component';
+import { Course1lesson1page7Component } from './coursesgo/course1/lesson1/page7/course1lesson1page7/course1lesson1page7.component';
+import { Course1lesson2page1Component } from './coursesgo/course1/lesson2/page1/course1lesson2page1/course1lesson2page1.component';
+import { Course1lesson2page2Component } from './coursesgo/course1/lesson2/page2/course1lesson2page2/course1lesson2page2.component';
+import { Course1lesson2page3Component } from './coursesgo/course1/lesson2/page3/course1lesson2page3/course1lesson2page3.component';
+import { Course1lesson3page1Component } from './coursesgo/course1/lesson3/page1/course1lesson3page1/course1lesson3page1.component';
+import { Courses1lesson3page2Component } from './coursesgo/course1/lesson3/page2/courses1lesson3page2/courses1lesson3page2.component';
+import { Course1lesson3page3Component } from './coursesgo/course1/lesson3/page4/course1lesson3page3/course1lesson3page3.component';
+import { Course1lesson3page4Component } from './coursesgo/course1/lesson3/page5/course1lesson3page4/course1lesson3page4.component';
+import { Course1lesson3page5Component } from './coursesgo/course1/lesson3/page6/course1lesson3page5/course1lesson3page5.component';
+import { Course1lesson4page1Component } from './coursesgo/course1/lesson4/page1/course1lesson4page1/course1lesson4page1.component';
+import { Course1lesson4page2Component } from './coursesgo/course1/lesson4/page2/course1lesson4page2/course1lesson4page2.component';
+import { Course1lesson4page3Component } from './coursesgo/course1/lesson4/page3/course1lesson4page3/course1lesson4page3.component';
+import { Course1lesson4page4Component } from './coursesgo/course1/lesson4/page4/course1lesson4page4/course1lesson4page4.component';
+import { Course1lesson4page5Component } from './coursesgo/course1/lesson4/page5/course1lesson4page5/course1lesson4page5.component';
+import { Course1lesson5page1Component } from './coursesgo/course1/lesson5/page1/course1lesson5page1/course1lesson5page1.component';
+import { Course1lesson5page2Component } from './coursesgo/course1/lesson5/page2/course1lesson5page2/course1lesson5page2.component';
 import { RegisterOrLogComponent } from './components/registerOrLog/register-or-log/register-or-log.component';
 import { HomePageSignInComponent } from './pages/home-page/home-page-sign-in/home-page-sign-in/home-page-sign-in.component';
 //import { CoursesInfoComponent } from './components/courses-info/courses-info.component';
@@ -59,6 +80,27 @@ import { HomePageSignInComponent } from './pages/home-page/home-page-sign-in/hom
     CoursesPageBiodiversidadComponent,
     CoursesPageSeresVivosComponent,
     RegisterOrLogComponent
+       Course1lesson1page2Component,
+       Course1lesson1page3Component,
+       Course1lesson1page4Component,
+       Course1lesson1page5Component,
+       Course1lesson1page6Component,
+       Course1lesson1page7Component,
+       Course1lesson2page1Component,
+       Course1lesson2page2Component,
+       Course1lesson2page3Component,
+       Course1lesson3page1Component,
+       Courses1lesson3page2Component,
+       Course1lesson3page3Component,
+       Course1lesson3page4Component,
+       Course1lesson3page5Component,
+       Course1lesson4page1Component,
+       Course1lesson4page2Component,
+       Course1lesson4page3Component,
+       Course1lesson4page4Component,
+       Course1lesson4page5Component,
+       Course1lesson5page1Component,
+       Course1lesson5page2Component,
     //CoursesInfoComponent,
   ],
   imports: [

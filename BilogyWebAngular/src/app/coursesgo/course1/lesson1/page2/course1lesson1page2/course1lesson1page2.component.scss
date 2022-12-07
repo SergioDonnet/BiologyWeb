@@ -1,0 +1,84 @@
+p {
+    font-family: 'Outfit', sans-serif;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    margin-top: 25px;
+}
+.rectangle {
+    display: flex;
+    flex-direction: column;
+    width: 86%;
+    height: 500px;
+    margin: 0%;
+    padding: 0%;
+    background-color: white;
+    border-radius: 30px;
+    justify-content: center;
+    background-size: cover;
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+    font-weight: 500;
+    align-items: center;
+    font-size: 35px;
+    letter-spacing: 1.25px;
+    color: #34A853;
+
+}
+
+.description{
+    display: flex;
+    flex-direction: row;
+    font-size: 20px;
+
+}
+
+.bar{
+
+}
+
+.box1{
+
+}
+
+.text{
+
+}
+
+.box2{
+
+    display: flex;
+   justify-content: space-between;
+   margin: 40px;
+   top: 100%;
+
+}
+
+.preg{
+  
+
+
+}
+
+.plato{
+   
+}
+
+.btns{
+    display:flex;
+
+}
+
+.btn1{
+    margin-left: 40%;
+
+}
+
+.btn2{
+
+}
