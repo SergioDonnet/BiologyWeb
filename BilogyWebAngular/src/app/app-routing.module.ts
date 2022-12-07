@@ -1,5 +1,7 @@
 import { Component, NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { canActivate, redirectUnauthorizedTo } from '@angular/fire/auth-guard';
+
 import { CoursesComponent } from './components/courses/courses.component';
 import { AboutUsButtonComponent } from './pages/about-us-button/about-us-button.component';
 import { CourseDetailsComponent } from './pages/courses-page/course-details/course-details/course-details.component';
@@ -8,21 +10,21 @@ import { CoursesPageBiodiversidadComponent } from './pages/courses-page/courses-
 import { CoursesPageSeresVivosComponent } from './pages/courses-page/courses-page-seres-vivos/courses-page-seres-vivos.component';
 import { CoursesPageComponent } from './pages/courses-page/courses-page.component';
 import { HomePageComponent } from './pages/home-page/home-page.component';
+import { ProfilePageComponent } from './pages/profile-page/profile-page.component';
+import { RegisterOrLogComponent } from './components/registerOrLog/register-or-log/register-or-log.component';
 
 const routes: Routes = [
+  { path: 'home', component: HomePageComponent },
   {
-    path: 'home',
-    component: HomePageComponent,
-  },
-  { path: 'course1', component: CoursesPageArteComponent },
-  {path: 'course2', component: CoursesPageBiodiversidadComponent},
-  {path: 'course3', component: CoursesPageSeresVivosComponent},
-  {
-    path: 'courses',
-    component: CoursesPageComponent,
+    path: 'courses', component: CoursesPageComponent,
     children: [{ path: 'detail/:id', component: CourseDetailsComponent }],
   },
   { path: 'about-us', component: AboutUsButtonComponent },
+  {
+    path: 'profile', component: ProfilePageComponent,
+    ...canActivate(() => redirectUnauthorizedTo(['/register']))
+  },
+  { path: 'register', component: RegisterOrLogComponent },
   { path: '**', redirectTo: 'home', pathMatch: 'full' },
   { path: '', component: HomePageComponent },
 ];
@@ -31,4 +33,4 @@ const routes: Routes = [
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule],
 })
-export class AppRoutingModule {}
+export class AppRoutingModule { }
