@@ -58,6 +58,7 @@ import { HomePageSignInComponent } from './pages/home-page/home-page-sign-in/hom
     CoursesPageArteComponent,
     CoursesPageBiodiversidadComponent,
     CoursesPageSeresVivosComponent,
+    RegisterOrLogComponent
     //CoursesInfoComponent,
   ],
   imports: [
