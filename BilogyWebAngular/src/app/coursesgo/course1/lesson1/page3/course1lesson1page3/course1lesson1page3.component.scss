@@ -1,0 +1,63 @@
+.container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    margin-top: 25px;
+}
+.rectangle {
+    display: flex;
+    flex-direction: column;
+    width: 86%;
+    height: 500px;
+    margin: 0%;
+    padding: 0%;
+    background-color: white;
+    border-radius: 30px;
+    justify-content: center;
+    background-size: cover;
+}
+
+p {
+    font-family: 'Outfit', sans-serif;
+    margin: 0px;
+    padding: 0%;
+}
+
+
+.title {
+    display: flex;
+    justify-content: center;
+    font-weight: 600;
+    height: 30px;
+    align-items: center;
+    font-size: 50px;
+    letter-spacing: 1.25px;
+    color: #34A853;
+
+}
+
+.sub{
+    display: flex;
+    justify-content: center;
+    font-weight: 500;
+    height: 100px;
+    align-items: center;
+    font-size: 22px;
+    letter-spacing: 1.25px;
+    color: #34A853;
+}
+
+.description{
+    display: flex;
+}
+
+.imagen{
+    display: flex;
+    justify-content: center;
+}
+
+.btns{
+    display: flex;
+    justify-content: space-around;
+}
+

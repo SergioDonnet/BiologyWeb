@@ -35,6 +35,7 @@ import { CoursesPageBiodiversidadComponent } from './pages/courses-page/courses-
 import { CoursesPageSeresVivosComponent } from './pages/courses-page/courses-page-seres-vivos/courses-page-seres-vivos.component';
 import { Course1lesson1page1Component } from './coursesgo/course1/lesson1/page1/course1lesson1page1/course1lesson1page1.component';
 import { Course1lesson1page2Component } from './coursesgo/course1/lesson1/page2/course1lesson1page2/course1lesson1page2.component';
+import { Course1lesson1page3Component } from './coursesgo/course1/lesson1/page3/course1lesson1page3/course1lesson1page3.component';
 //import { CoursesInfoComponent } from './components/courses-info/courses-info.component';
 
 @NgModule({
@@ -60,6 +61,7 @@ import { Course1lesson1page2Component } from './coursesgo/course1/lesson1/page2/
   
     Course1lesson1page1Component,
        Course1lesson1page2Component,
+       Course1lesson1page3Component,
     //CoursesInfoComponent,
   ],
   imports: [
