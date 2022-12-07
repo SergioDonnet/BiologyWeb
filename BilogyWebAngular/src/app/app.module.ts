@@ -57,6 +57,7 @@ import { Course1lesson5page1Component } from './coursesgo/course1/lesson5/page1/
 import { Course1lesson5page2Component } from './coursesgo/course1/lesson5/page2/course1lesson5page2/course1lesson5page2.component';
 import { RegisterOrLogComponent } from './components/registerOrLog/register-or-log/register-or-log.component';
 import { HomePageSignInComponent } from './pages/home-page/home-page-sign-in/home-page-sign-in/home-page-sign-in.component';
+import { Course2lesson1page1Component } from './coursesgo/course2/lesson1/page1/course2lesson1page1/course2lesson1page1.component';
 //import { CoursesInfoComponent } from './components/courses-info/courses-info.component';
 
 @NgModule({
@@ -79,28 +80,28 @@ import { HomePageSignInComponent } from './pages/home-page/home-page-sign-in/hom
     CoursesPageArteComponent,
     CoursesPageBiodiversidadComponent,
     CoursesPageSeresVivosComponent,
-    RegisterOrLogComponent
-       Course1lesson1page2Component,
-       Course1lesson1page3Component,
-       Course1lesson1page4Component,
-       Course1lesson1page5Component,
-       Course1lesson1page6Component,
-       Course1lesson1page7Component,
-       Course1lesson2page1Component,
-       Course1lesson2page2Component,
-       Course1lesson2page3Component,
-       Course1lesson3page1Component,
-       Courses1lesson3page2Component,
-       Course1lesson3page3Component,
-       Course1lesson3page4Component,
-       Course1lesson3page5Component,
-       Course1lesson4page1Component,
-       Course1lesson4page2Component,
-       Course1lesson4page3Component,
-       Course1lesson4page4Component,
-       Course1lesson4page5Component,
-       Course1lesson5page1Component,
-       Course1lesson5page2Component,
+    RegisterOrLogComponent,
+    Course1lesson1page3Component,
+    Course1lesson1page4Component,
+    Course1lesson1page5Component,
+    Course1lesson1page6Component,
+    Course1lesson1page7Component,
+    Course1lesson2page1Component,
+    Course1lesson2page2Component,
+    Course1lesson2page3Component,
+    Course1lesson3page1Component,
+    Courses1lesson3page2Component,
+    Course1lesson3page3Component,
+    Course1lesson3page4Component,
+    Course1lesson3page5Component,
+    Course1lesson4page1Component,
+    Course1lesson4page2Component,
+    Course1lesson4page3Component,
+    Course1lesson4page4Component,
+    Course1lesson4page5Component,
+    Course1lesson5page1Component,
+    Course1lesson5page2Component,
+    Course2lesson1page1Component,
     //CoursesInfoComponent,
   ],
   imports: [
@@ -122,6 +123,6 @@ import { HomePageSignInComponent } from './pages/home-page/home-page-sign-in/hom
     provideFunctions(() => getFunctions()),
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
