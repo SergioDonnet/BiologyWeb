@@ -11,23 +11,9 @@ p {
     padding: 0%;
 }
 
-.biologisc {
-    font-weight: 700;
-    font-size: 23px;
-    letter-spacing: 1.25px;
-    color: #0E8A2F;
-}
-
-.biologisc2 {
-    font-weight: 900;
-    font-size: 50px;
-    letter-spacing: 1.25px;
-    color: #0E8A2F;
-}
-
 .rectangle {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     width: 86%;
     height: 500px;
     margin: 0%;
@@ -39,7 +25,15 @@ p {
     background-size: cover;
 }
 
-.title {
+.message {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.text {
     display: flex;
     justify-content: center;
     font-weight: 600;
@@ -48,25 +42,11 @@ p {
     font-size: 50px;
     letter-spacing: 1.25px;
     color: #34A853;
-
 }
 
-.description {
-    font-weight: 200;
+.subtext {
+    font-weight: 500;
     font-size: 23px;
-    //line-height: 30px;
-    text-align: justify;
-    letter-spacing: 1.25px;
-    text-indent: 1px;
-    padding-left: 12%;
-    padding-right: 12%;
-    padding-bottom: 80px;
-    color: #000000;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
-.points {
-    padding-left: 4%;
+    line-height: 22px;
+    color: #34A853;
 }

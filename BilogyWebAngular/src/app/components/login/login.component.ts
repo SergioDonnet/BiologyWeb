@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup } from '@angular/forms';
+import { Router } from '@angular/router';
 import { AuthService } from 'src/app/services/auth/auth.service';
 
 @Component({
@@ -12,7 +13,9 @@ export class LoginComponent implements OnInit {
 
   formLogin: FormGroup;
 
-  constructor(private authService:AuthService) { 
+  constructor(
+    private authService:AuthService
+    private router: Router) { 
   this.formLogin = new FormGroup({
     email:new FormControl(),
     password:new FormControl()
@@ -32,8 +35,8 @@ export class LoginComponent implements OnInit {
 
   onClick(){
     this.authService.loginWithGoogle()
-    .then(response =>{
-
+    .then(response=>{
+      this.router.navigate(['/courses'])
     })
     .catch(error => console.log(error));
   }
