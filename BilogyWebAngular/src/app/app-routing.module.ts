@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { canActivate, redirectUnauthorizedTo } from '@angular/fire/auth-guard';
 
 import { CoursesComponent } from './components/courses/courses.component';
+import { Course1lesson1page1Component } from './coursesgo/course1/lesson1/page1/course1lesson1page1/course1lesson1page1.component';
 import { AboutUsButtonComponent } from './pages/about-us-button/about-us-button.component';
 import { CourseDetailsComponent } from './pages/courses-page/course-details/course-details/course-details.component';
 import { CoursesPageArteComponent } from './pages/courses-page/courses-page-arte/courses-page-arte.component';
@@ -27,6 +28,7 @@ const routes: Routes = [
   { path: 'register', component: RegisterOrLogComponent },
   { path: '**', redirectTo: 'home', pathMatch: 'full' },
   { path: '', component: HomePageComponent },
+  {path: 'course1lesson1page1',component:Course1lesson1page1Component}
 ];
 
 @NgModule({
