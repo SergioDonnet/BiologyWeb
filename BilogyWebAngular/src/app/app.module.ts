@@ -48,6 +48,7 @@ import { Courses1lesson3page2Component } from './coursesgo/course1/lesson3/page2
 import { Course1lesson3page3Component } from './coursesgo/course1/lesson3/page4/course1lesson3page3/course1lesson3page3.component';
 import { Course1lesson3page4Component } from './coursesgo/course1/lesson3/page5/course1lesson3page4/course1lesson3page4.component';
 import { Course1lesson3page5Component } from './coursesgo/course1/lesson3/page6/course1lesson3page5/course1lesson3page5.component';
+import { Course1lesson4page1Component } from './coursesgo/course1/lesson4/page1/course1lesson4page1/course1lesson4page1.component';
 //import { CoursesInfoComponent } from './components/courses-info/courses-info.component';
 
 @NgModule({
@@ -86,6 +87,7 @@ import { Course1lesson3page5Component } from './coursesgo/course1/lesson3/page6/
        Course1lesson3page3Component,
        Course1lesson3page4Component,
        Course1lesson3page5Component,
+       Course1lesson4page1Component,
     //CoursesInfoComponent,
   ],
   imports: [
