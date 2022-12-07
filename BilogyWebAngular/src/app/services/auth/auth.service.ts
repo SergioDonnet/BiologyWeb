@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
-import { Auth,createUserWithEmailAndPassword,signInWithEmailAndPassword,signInWithPopup,GoogleAuthProvider } from '@angular/fire/auth';
-import { FacebookAuthProvider } from '@firebase/auth';
+import { Auth,createUserWithEmailAndPassword,signInWithEmailAndPassword,signInWithPopup,GoogleAuthProvider, } from '@angular/fire/auth';
+import { FacebookAuthProvider, signOut } from '@firebase/auth';
 @Injectable({
   providedIn: 'root',
 })
@@ -27,6 +27,10 @@ loginWithGoogle(){
 
 loginWithFacebook(){
   return signInWithPopup(this.auth,new FacebookAuthProvider());
+}
+
+logOut(){
+  return signOut(this.auth);
 }
 
 }
