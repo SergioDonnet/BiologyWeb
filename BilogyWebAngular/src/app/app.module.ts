@@ -55,6 +55,8 @@ import { Course1lesson4page4Component } from './coursesgo/course1/lesson4/page4/
 import { Course1lesson4page5Component } from './coursesgo/course1/lesson4/page5/course1lesson4page5/course1lesson4page5.component';
 import { Course1lesson5page1Component } from './coursesgo/course1/lesson5/page1/course1lesson5page1/course1lesson5page1.component';
 import { Course1lesson5page2Component } from './coursesgo/course1/lesson5/page2/course1lesson5page2/course1lesson5page2.component';
+import { RegisterOrLogComponent } from './components/registerOrLog/register-or-log/register-or-log.component';
+import { HomePageSignInComponent } from './pages/home-page/home-page-sign-in/home-page-sign-in/home-page-sign-in.component';
 //import { CoursesInfoComponent } from './components/courses-info/courses-info.component';
 
 @NgModule({
@@ -77,8 +79,7 @@ import { Course1lesson5page2Component } from './coursesgo/course1/lesson5/page2/
     CoursesPageArteComponent,
     CoursesPageBiodiversidadComponent,
     CoursesPageSeresVivosComponent,
-  
-    Course1lesson1page1Component,
+    RegisterOrLogComponent
        Course1lesson1page2Component,
        Course1lesson1page3Component,
        Course1lesson1page4Component,

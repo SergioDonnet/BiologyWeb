@@ -13,6 +13,95 @@
   justify-content: space-around;
 }
 
+.container {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.rectangle {
+  display: flex;
+  width: 86%;
+  height: 490px;
+  background-image: url(https://firebasestorage.googleapis.com/v0/b/biologyweb-e247e.appspot.com/o/login%20background.png?alt=media&token=357d48c0-3f62-44e7-bca0-17417fd57368);
+  background-size: cover;
+  border-radius: 30px;
+  margin-bottom: 30px;
+  flex-direction: row;
+}
+
+p {
+  font-family: 'Outfit', sans-serif;
+}
+
+.login-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  width: 60.5%;
+  margin: 0px;
+  padding: 0px;
+}
+
+
+.login-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-title {
+  font-weight: 500;
+  font-size: 35px;
+  letter-spacing: 1.25px;
+  color: #ffffff;
+  margin: 0%;
+  padding: 0%;
+}
+
+.login-desc {
+  font-weight: 100;
+  font-size: 25px;
+  line-height: 24px;
+  letter-spacing: 1.25px;
+  color: #ffffff;
+  margin: 0%;
+  padding: 0%;
+}
+
+.mat-card {
+  display: flex;
+  flex-direction: column;
+  width: 380px;
+  margin: 2em auto;
+  text-align: center;
+  border-radius: 15px;
+  background-color: rgba(117, 224, 156, 0.79);
+  height: 420px;
+}
+
+.header {
+  text-align: center;
+  font-family: 'Outfit', sans-serif;
+  font-weight: 500;
+  font-size: 22px;
+  color: #ffffff;
+
+  display: flex;
+  align-items: center;
+  letter-spacing: 2px;
+  margin-left: 30px;
+}
+
+.ask{
+  color: white;
+  letter-spacing: 0.05em;
+  font-size: 12px;
+  font-weight: 100;
+  margin-right: 5px;
+}
+
 p {
   font-family: 'Outfit', sans-serif;
 }
