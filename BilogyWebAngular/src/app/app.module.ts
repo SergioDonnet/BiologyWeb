@@ -76,6 +76,20 @@ import { Course2lesson4page1Component } from './coursesgo/course2/lesson4/page1/
 import { Course2lesson4page2Component } from './coursesgo/course2/lesson4/page2/course2lesson4page2/course2lesson4page2.component';
 import { Course2lesson4page3Component } from './coursesgo/course2/lesson4/page3/course2lesson4page3/course2lesson4page3.component';
 import { Course2lesson4page4Component } from './coursesgo/course2/lesson4/page4/course2lesson4page4/course2lesson4page4.component';
+import { Course3lesson1page1Component } from './coursesgo/course3/lesson1/page1/course3lesson1page1/course3lesson1page1.component';
+import { Course3lesson1page2Component } from './coursesgo/course3/lesson1/page2/course3lesson1page2/course3lesson1page2.component';
+import { Course3lesson1page3Component } from './coursesgo/course3/lesson1/page3/course3lesson1page3/course3lesson1page3.component';
+import { Course3lesson2page1Component } from './coursesgo/course3/lesson2/page1/course3lesson2page1/course3lesson2page1.component';
+import { Course3lesson2page2Component } from './coursesgo/course3/lesson2/page2/course3lesson2page2/course3lesson2page2.component';
+import { Course3lesson2page3Component } from './coursesgo/course3/lesson2/page3/course3lesson2page3/course3lesson2page3.component';
+import { Course3lesson3page1Component } from './coursesgo/course3/lesson3/page1/course3lesson3page1/course3lesson3page1.component';
+import { Course3lesson3page2Component } from './coursesgo/course3/lesson3/page2/course3lesson3page2/course3lesson3page2.component';
+import { Course3lesson4page1Component } from './coursesgo/course3/lesson4/page1/course3lesson4page1/course3lesson4page1.component';
+import { Course3lesson4page2Component } from './coursesgo/course3/lesson4/page2/course3lesson4page2/course3lesson4page2.component';
+import { Course3lesson4page3Component } from './coursesgo/course3/lesson4/page3/course3lesson4page3/course3lesson4page3.component';
+import { Course3lesson5page1Component } from './coursesgo/course3/lesson5/page1/course3lesson5page1/course3lesson5page1.component';
+import { Course3lesson5page2Component } from './coursesgo/course3/lesson5/page2/course3lesson5page2/course3lesson5page2.component';
+import { Course3lesson5page3Component } from './coursesgo/course3/lesson5/page3/course3lesson5page3/course3lesson5page3.component';
 //import { CoursesInfoComponent } from './components/courses-info/courses-info.component';
 
 @NgModule({
@@ -138,6 +152,20 @@ import { Course2lesson4page4Component } from './coursesgo/course2/lesson4/page4/
     Course2lesson4page2Component,
     Course2lesson4page3Component,
     Course2lesson4page4Component,
+    Course3lesson1page1Component,
+    Course3lesson1page2Component,
+    Course3lesson1page3Component,
+    Course3lesson2page1Component,
+    Course3lesson2page2Component,
+    Course3lesson2page3Component,
+    Course3lesson3page1Component,
+    Course3lesson3page2Component,
+    Course3lesson4page1Component,
+    Course3lesson4page2Component,
+    Course3lesson4page3Component,
+    Course3lesson5page1Component,
+    Course3lesson5page2Component,
+    Course3lesson5page3Component,
     //CoursesInfoComponent,
   ],
   imports: [
