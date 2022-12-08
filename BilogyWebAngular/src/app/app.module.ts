@@ -57,6 +57,25 @@ import { Course1lesson5page1Component } from './coursesgo/course1/lesson5/page1/
 import { Course1lesson5page2Component } from './coursesgo/course1/lesson5/page2/course1lesson5page2/course1lesson5page2.component';
 import { RegisterOrLogComponent } from './components/registerOrLog/register-or-log/register-or-log.component';
 import { HomePageSignInComponent } from './pages/home-page/home-page-sign-in/home-page-sign-in/home-page-sign-in.component';
+import { Course2lesson1page1Component } from './coursesgo/course2/lesson1/page1/course2lesson1page1/course2lesson1page1.component';
+import { Course2lesson1page2Component } from './coursesgo/course2/lesson1/page2/course2lesson1page2/course2lesson1page2.component';
+import { Course2lesson1page3Component } from './coursesgo/course2/lesson1/page3/course2lesson1page3/course2lesson1page3.component';
+import { Course2lesson1page4Component } from './coursesgo/course2/lesson1/page4/course2lesson1page4/course2lesson1page4.component';
+import { Course2lesson1page5Component } from './coursesgo/course2/lesson1/page5/course2lesson1page5/course2lesson1page5.component';
+import { Courses1lesson1page6Component } from './coursesgo/course2/lesson1/page6/courses1lesson1page6/courses1lesson1page6.component';
+import { Course2lesson2page1Component } from './coursesgo/course2/lesson2/page1/course2lesson2page1/course2lesson2page1.component';
+import { Course2lesson2page2Component } from './coursesgo/course2/lesson2/page2/course2lesson2page2/course2lesson2page2.component';
+import { Course2lesson2page3Component } from './coursesgo/course2/lesson2/page3/course2lesson2page3/course2lesson2page3.component';
+import { Course2lesson2page4Component } from './coursesgo/course2/lesson2/page4/course2lesson2page4/course2lesson2page4.component';
+import { Course2lesson2page5Component } from './coursesgo/course2/lesson2/page5/course2lesson2page5/course2lesson2page5.component';
+import { Course2lesson3page1Component } from './coursesgo/course2/lesson3/page1/course2lesson3page1/course2lesson3page1.component';
+import { Course2lesson3page2Component } from './coursesgo/course2/lesson3/page2/course2lesson3page2/course2lesson3page2.component';
+import { Course2lesson3page3Component } from './coursesgo/course2/lesson3/page3/course2lesson3page3/course2lesson3page3.component';
+import { Course2lesson3page4Component } from './coursesgo/course2/lesson3/page4/course2lesson3page4/course2lesson3page4.component';
+import { Course2lesson4page1Component } from './coursesgo/course2/lesson4/page1/course2lesson4page1/course2lesson4page1.component';
+import { Course2lesson4page2Component } from './coursesgo/course2/lesson4/page2/course2lesson4page2/course2lesson4page2.component';
+import { Course2lesson4page3Component } from './coursesgo/course2/lesson4/page3/course2lesson4page3/course2lesson4page3.component';
+import { Course2lesson4page4Component } from './coursesgo/course2/lesson4/page4/course2lesson4page4/course2lesson4page4.component';
 //import { CoursesInfoComponent } from './components/courses-info/courses-info.component';
 
 @NgModule({
@@ -79,28 +98,46 @@ import { HomePageSignInComponent } from './pages/home-page/home-page-sign-in/hom
     CoursesPageArteComponent,
     CoursesPageBiodiversidadComponent,
     CoursesPageSeresVivosComponent,
-    RegisterOrLogComponent
-       Course1lesson1page2Component,
-       Course1lesson1page3Component,
-       Course1lesson1page4Component,
-       Course1lesson1page5Component,
-       Course1lesson1page6Component,
-       Course1lesson1page7Component,
-       Course1lesson2page1Component,
-       Course1lesson2page2Component,
-       Course1lesson2page3Component,
-       Course1lesson3page1Component,
-       Courses1lesson3page2Component,
-       Course1lesson3page3Component,
-       Course1lesson3page4Component,
-       Course1lesson3page5Component,
-       Course1lesson4page1Component,
-       Course1lesson4page2Component,
-       Course1lesson4page3Component,
-       Course1lesson4page4Component,
-       Course1lesson4page5Component,
-       Course1lesson5page1Component,
-       Course1lesson5page2Component,
+    RegisterOrLogComponent,
+    Course1lesson1page3Component,
+    Course1lesson1page4Component,
+    Course1lesson1page5Component,
+    Course1lesson1page6Component,
+    Course1lesson1page7Component,
+    Course1lesson2page1Component,
+    Course1lesson2page2Component,
+    Course1lesson2page3Component,
+    Course1lesson3page1Component,
+    Courses1lesson3page2Component,
+    Course1lesson3page3Component,
+    Course1lesson3page4Component,
+    Course1lesson3page5Component,
+    Course1lesson4page1Component,
+    Course1lesson4page2Component,
+    Course1lesson4page3Component,
+    Course1lesson4page4Component,
+    Course1lesson4page5Component,
+    Course1lesson5page1Component,
+    Course1lesson5page2Component,
+    Course2lesson1page1Component,
+    Course2lesson1page2Component,
+    Course2lesson1page3Component,
+    Course2lesson1page4Component,
+    Course2lesson1page5Component,
+    Courses1lesson1page6Component,
+    Course2lesson2page1Component,
+    Course2lesson2page2Component,
+    Course2lesson2page3Component,
+    Course2lesson2page4Component,
+    Course2lesson2page5Component,
+    Course2lesson3page1Component,
+    Course2lesson3page2Component,
+    Course2lesson3page3Component,
+    Course2lesson3page4Component,
+    Course2lesson4page1Component,
+    Course2lesson4page2Component,
+    Course2lesson4page3Component,
+    Course2lesson4page4Component,
     //CoursesInfoComponent,
   ],
   imports: [
@@ -122,6 +159,6 @@ import { HomePageSignInComponent } from './pages/home-page/home-page-sign-in/hom
     provideFunctions(() => getFunctions()),
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
