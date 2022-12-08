@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import {Course,CoursesService,} from 'src/app/services/courses/courses.service';
+import { ActivatedRoute, Router } from '@angular/router';
+import { Location } from '@angular/common';
 
 @Component({
   selector: 'app-courses-page',
@@ -7,19 +8,15 @@ import {Course,CoursesService,} from 'src/app/services/courses/courses.service';
   styleUrls: ['./courses-page.component.scss'],
 })
 export class CoursesPageComponent implements OnInit {
-  
-  courses: Course[] = [];
-  currentUser?: CoursesService;
-
-  constructor(public coursesService: CoursesService) { }
+  constructor(
+    private router: Router,
+    private route: ActivatedRoute,
+    private location: Location) { }
 
   ngOnInit(): void {
-   
-
-    this.coursesService.listCourses().then((fbCourses) => {
-      // console.log('prueba: ' + JSON.stringify(fbCourses));
-      this.courses = fbCourses;
-    });
+  }
+  goBack(){
+    this.location.back();
   }
 
 }

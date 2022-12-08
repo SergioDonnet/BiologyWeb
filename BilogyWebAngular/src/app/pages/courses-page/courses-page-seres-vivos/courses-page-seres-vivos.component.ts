@@ -21,4 +21,8 @@ export class CoursesPageSeresVivosComponent implements OnInit {
     this.location.back();
   }
 
+  onClick(){
+    this.router.navigate(['/course2details'])
+  }
+
 }

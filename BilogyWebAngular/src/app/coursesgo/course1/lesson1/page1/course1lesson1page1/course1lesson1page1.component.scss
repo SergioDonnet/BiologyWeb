@@ -37,10 +37,26 @@ p {
     font-size: 20px;
 }
 
-.btns{
-    display:flex;
-    flex-direction: row;
-    justify-content: space-between;
+.buttonVolver, .buttonComenzar {
+    font-family: 'Outfit', sans-serif;
+    color: white;
+    letter-spacing: 1.25px;
+    background-color: #34A853;
+}
+
+.buttons{
+    display: flex;
+    margin-top: 10px;
+    justify-content: space-around;
+    
+}
+
+.button1 {
+    margin-right: 310px;
+}
+
+.button2 {
+    margin-left: 310px;
 }
 
 imgCourse{

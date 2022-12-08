@@ -13,6 +13,8 @@ import { CoursesPageComponent } from './pages/courses-page/courses-page.componen
 import { HomePageComponent } from './pages/home-page/home-page.component';
 import { ProfilePageComponent } from './pages/profile-page/profile-page.component';
 import { RegisterOrLogComponent } from './components/registerOrLog/register-or-log/register-or-log.component';
+import { Course1Component } from './pages/courses-page/course1/course1.component';
+import { Course3Component } from './pages/courses-page/course3/course3.component';
 
 const routes: Routes = [
   { path: 'home', component: HomePageComponent },
@@ -24,6 +26,8 @@ const routes: Routes = [
   { path: 'course2', component: CoursesPageSeresVivosComponent },
   { path: 'course3', component: CoursesPageBiodiversidadComponent },
   { path: 'about-us', component: AboutUsButtonComponent },
+  { path: 'course2details', component: Course1Component },
+  { path: 'course3details', component: Course3Component },
   {
     path: 'profile', component: ProfilePageComponent,
     ...canActivate(() => redirectUnauthorizedTo(['/register']))
