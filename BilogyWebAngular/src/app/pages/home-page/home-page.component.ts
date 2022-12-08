@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import {Course,CoursesService,} from 'src/app/services/courses/courses.service';
+import { Course, CoursesService, } from 'src/app/services/courses/courses.service';
 import { LoginSergio } from 'src/app/services/loginsergio/loginsergio.service';
+import { Router } from '@angular/router';
+
 
 @Component({
   selector: 'app-home-page',
@@ -11,7 +13,8 @@ export class HomePageComponent implements OnInit {
   courses: Course[] = [];
   currentUser?: LoginSergio;
 
-  constructor(public coursesService: CoursesService) {}
+  constructor(public coursesService: CoursesService,
+    private router: Router) { }
 
   ngOnInit(): void {
     this.currentUser = {
@@ -28,5 +31,15 @@ export class HomePageComponent implements OnInit {
       // console.log('prueba: ' + JSON.stringify(fbCourses));
       this.courses = fbCourses;
     });
+  }
+
+  onClickC1() {
+    this.router.navigate(['/course1'])
+  }
+  onClickC2() {
+    this.router.navigate(['/course2'])
+  }
+  onClickC3() {
+    this.router.navigate(['/course3'])
   }
 }

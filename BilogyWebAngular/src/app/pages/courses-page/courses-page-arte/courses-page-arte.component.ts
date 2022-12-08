@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
+import { Location } from '@angular/common';
 
 @Component({
   selector: 'app-courses-page-arte',
@@ -7,9 +9,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CoursesPageArteComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    private router: Router,
+    private route: ActivatedRoute,
+    private location: Location) { }
 
   ngOnInit(): void {
+  }
+
+  onClick() {
+    this.router.navigate(['/home'])
+  }
+
+  goBack(){
+    this.location.back();
   }
 
 }
