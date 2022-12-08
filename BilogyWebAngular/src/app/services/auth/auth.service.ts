@@ -1,3 +1,5 @@
+
+
 import { Injectable } from '@angular/core';
 import { Auth,createUserWithEmailAndPassword,signInWithEmailAndPassword,signInWithPopup,GoogleAuthProvider, } from '@angular/fire/auth';
 import { FacebookAuthProvider, signOut } from '@firebase/auth';
@@ -31,6 +33,14 @@ loginWithFacebook(){
 
 logOut(){
   return signOut(this.auth);
+}
+
+/**
+   * It returns the current state of the user
+   * @returns The authState of the user.
+   */
+getStateUser() {
+  return this.auth.onAuthStateChanged;
 }
 
 }

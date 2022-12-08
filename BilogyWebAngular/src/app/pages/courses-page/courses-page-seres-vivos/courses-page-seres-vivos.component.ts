@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
+import { Location } from '@angular/common';
 
 @Component({
   selector: 'app-courses-page-seres-vivos',
@@ -9,13 +10,15 @@ import { Router } from '@angular/router';
 export class CoursesPageSeresVivosComponent implements OnInit {
 
   constructor(
-    private router: Router
+    private router: Router,
+    private route: ActivatedRoute,
+    private location: Location
   ) { }
 
   ngOnInit(): void {
   }
-  onClick() {
-    this.router.navigate(['/home'])
+  goBack(){
+    this.location.back();
   }
 
 }

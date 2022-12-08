@@ -40,15 +40,6 @@ export class LoginComponent implements OnInit {
     })
     .catch(error => console.log(error));
   }
-
-  onClickf(){
-    this.authService.loginWithFacebook()
-    .then(response =>{
-
-    })
-    .catch(error => console.log(error));
-  }
-
   
 }
 
