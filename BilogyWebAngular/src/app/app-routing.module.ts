@@ -20,6 +20,9 @@ const routes: Routes = [
     path: 'courses', component: CoursesPageComponent,
     children: [{ path: 'detail/:id', component: CourseDetailsComponent }],
   },
+  { path: 'course1', component: CoursesPageArteComponent, },
+  { path: 'course2', component: CoursesPageSeresVivosComponent },
+  { path: 'course3', component: CoursesPageBiodiversidadComponent },
   { path: 'about-us', component: AboutUsButtonComponent },
   {
     path: 'profile', component: ProfilePageComponent,
