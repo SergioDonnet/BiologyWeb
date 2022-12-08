@@ -17,10 +17,6 @@ export class CoursesPageArteComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  onClick() {
-    this.router.navigate(['/home'])
-  }
-
   goBack(){
     this.location.back();
   }
