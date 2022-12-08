@@ -90,6 +90,12 @@ import { Course3lesson4page3Component } from './coursesgo/course3/lesson4/page3/
 import { Course3lesson5page1Component } from './coursesgo/course3/lesson5/page1/course3lesson5page1/course3lesson5page1.component';
 import { Course3lesson5page2Component } from './coursesgo/course3/lesson5/page2/course3lesson5page2/course3lesson5page2.component';
 import { Course3lesson5page3Component } from './coursesgo/course3/lesson5/page3/course3lesson5page3/course3lesson5page3.component';
+import { Course1Component } from './pages/courses-page/course1/course1.component';
+import { Course3Component } from './pages/courses-page/course3/course3.component';
+import { CoursesUserComponent } from './pages/courses-user/courses-user.component';
+import { CoursesHomeComponent } from './pages/courses-home/courses-home.component';
+import { ArteComponent } from './pages/courses-home/arte/arte.component';
+import { DiversidadComponent } from './pages/courses-home/diversidad/diversidad.component';
 //import { CoursesInfoComponent } from './components/courses-info/courses-info.component';
 
 @NgModule({
@@ -166,6 +172,12 @@ import { Course3lesson5page3Component } from './coursesgo/course3/lesson5/page3/
     Course3lesson5page1Component,
     Course3lesson5page2Component,
     Course3lesson5page3Component,
+    Course1Component,
+    Course3Component,
+    CoursesUserComponent,
+    CoursesHomeComponent,
+    ArteComponent,
+    DiversidadComponent,
     //CoursesInfoComponent,
   ],
   imports: [

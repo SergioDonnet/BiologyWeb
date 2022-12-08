@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Location } from '@angular/common';
 
-
 @Component({
   selector: 'app-courses-page-biodiversidad',
   templateUrl: './courses-page-biodiversidad.component.html',
@@ -21,6 +20,10 @@ export class CoursesPageBiodiversidadComponent implements OnInit {
 
   goBack(){
     this.location.back();
+  }
+
+  onClick(){
+    this.router.navigate(['/course3details'])
   }
 
 }
